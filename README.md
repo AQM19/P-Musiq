@@ -17,6 +17,9 @@ pip install -r requirements.txt
 pip freeze > requirements.txt
 ```
 
+## Creación de las variables de entorno
+Copiar el archivo `.env.template` que tiene las variables de entorno por defecto y nombrarlo como `.env`
+
 ## Ejecución
 Abrir el archivo `main.py` y darle a iniciar, abrirá un servidor alojado localmente en el puerto 5000.
 Lo suficientemente ligero como para poder ejecutarlo en una raspberry pi.
