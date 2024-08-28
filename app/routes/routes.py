@@ -18,6 +18,6 @@ def download():
             download_path = os.path.join(Config.DOWNLOAD_DIRECTORY, filename)
             return send_file(download_path, as_attachment=True)
         except Exception as e:
-            return render_template('index.html', message=f"Error downloading audio: {e}")
+            return render_template('index.html', message=f"Error al descargar el audio")
 
-    return render_template('index.html', message="Please provide a YouTube link.")
+    return render_template('index.html', message="Por favor, inserta un link a YouTube")
