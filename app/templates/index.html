@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "components/base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>MusiQ</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
 
-<body>
+{% block content %}
 
-    {% include 'components/header.html' %}
+{% include 'components/form.html' %}
 
-    <main>
-
-        {% include 'components/form.html' %}
-
-    </main>
-
-</body>
-
-</html>
+{% endblock %}

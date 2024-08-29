@@ -1,0 +1,75 @@
+.list-content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+input {
+    height: 2rem;
+    flex: 1;
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-row button {
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: .75rem 1rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item-list {
+    width: 100%;
+    list-style: none;
+    max-height: 40vh;
+    overflow-y: scroll;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.item-list li {
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.item-list li span {
+    margin-left: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 90%; 
+}
+
+.item-list li:hover {
+    background: rgb(203 213 225);
+}
+
+.download-btn {
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: .75rem 4rem;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: end;
+}

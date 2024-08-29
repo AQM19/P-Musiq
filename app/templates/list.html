@@ -1,0 +1,12 @@
+{% extends "components/base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/list.css') }}">
+<script src="{{url_for('static', filename='js/handle-list.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+
+{% include 'components/list-form.html' %}
+
+{% endblock %}

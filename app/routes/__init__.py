@@ -1,1 +1,2 @@
-from .routes import bp as main_bp
+from .index import index_bp
+from .list_bp import list_bp

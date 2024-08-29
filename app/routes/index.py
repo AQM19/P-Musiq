@@ -3,13 +3,13 @@ from app.services.youtube_downloader import download_audio_mp3_from_youtube
 from flask import Blueprint, render_template, request, send_file
 import os
 
-bp = Blueprint('main', __name__)
+index_bp = Blueprint('index', __name__)
 
-@bp.route('/', methods=['GET'])
+@index_bp.route('/', methods=['GET'])
 def index():
     return render_template('index.html')
 
-@bp.route('/download', methods=['POST'])
+@index_bp.route('/download', methods=['POST'])
 def download():
     youtube_link = request.form.get('youtube_link')
     if youtube_link:
