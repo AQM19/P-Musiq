@@ -47,3 +47,10 @@ function_patterns = [
 
 Esto a día de hoy funciona. En algún momento se actualizará la librería.
 De momento no se ha conseguido descargar música en extensión `mp3`
+
+# Cosas por hacer
+
+-   Mejora de la lógica de la página principal
+-   Añadir un loader general
+-   Añadir nueva página para descarga de vídeos en formato .mp4
+-   Mejora de los estilos responsive
