@@ -1,7 +1,7 @@
 from app.enums import FileExtension, Messages
 from app.models import Config
 from app.utils.utils import clean_file_name
-from flask import current_app, send_file, jsonify
+from flask import send_file, jsonify
 from pytube import YouTube
 import logging
 import os
