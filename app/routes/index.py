@@ -1,8 +1,6 @@
-from app import Config
 from app.enums import Paths, Endpoints, TemplateNames, Messages
 from app.services.youtube_downloader import download_audio_mp3_from_youtube
-from flask import Blueprint, render_template, request, send_file
-import os
+from flask import Blueprint, render_template, request
 
 index_bp = Blueprint(Paths.INDEX.value, __name__)
 
@@ -15,9 +13,7 @@ def download():
     youtube_link = request.form.get('youtube_link')
     if youtube_link:
         try:
-            filename = download_audio_mp3_from_youtube(youtube_link)
-            download_path = os.path.join(Config.DOWNLOAD_DIRECTORY, filename)
-            return send_file(download_path, as_attachment=True)
+            return download_audio_mp3_from_youtube(youtube_link)
         except Exception:
             return render_template(TemplateNames.INDEX.value, message=Messages.DOWNLOAD_ERROR.value)
 
