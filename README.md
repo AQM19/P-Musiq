@@ -21,13 +21,13 @@ pip freeze > requirements.txt
 Copiar el archivo `.env.template` que tiene las variables de entorno por defecto y nombrarlo como `.env`
 
 ## Ejecución
-Abrir el archivo `main.py` y darle a iniciar, abrirá un servidor alojado localmente en el puerto 5000.
+Abrir el archivo `run.py` y darle a iniciar, abrirá un servidor alojado localmente en el puerto 5000.
 Lo suficientemente ligero como para poder ejecutarlo en una raspberry pi.
 
 ## Pytube 15.0.0
 La libreria pytube tiene un bug en la versión 15.0.0 tras un cambio en los archivos de YouTube
 Basta con pulsar `Ctrl + P` y buscar `cipher.py`
-Una vez en el archivo buscar la línea 264 que debería corresponder con el inicio de la variable `function_patterns`
+Una vez en el archivo buscar la línea `264` que debería corresponder con el inicio de la variable `function_patterns`
 Reemplazar dicha función por esta otra:
 
 ```py
@@ -50,7 +50,5 @@ De momento no se ha conseguido descargar música en extensión `mp3`
 
 # Cosas por hacer
 
--   Mejora de la lógica de la página principal
--   Añadir un loader general
 -   Añadir nueva página para descarga de vídeos en formato .mp4
 -   Mejora de los estilos responsive
