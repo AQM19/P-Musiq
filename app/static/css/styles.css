@@ -33,12 +33,14 @@ header a {
     display: flex;
     align-items: center;
     gap: 2rem;
+    transition: all .3s ease-out;
 }
 
 header a span {
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
+    transition: all .3s ease-out;
 }
 
 nav {
@@ -51,13 +53,13 @@ nav a {
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 500;
+    transition: all .3s ease-out;
 }
 
 nav a:hover {
     color: rgb(255 255 255);
+    transition: all .3s ease-out;
 }
-
-
 
 .list-form {
     display: flex;
