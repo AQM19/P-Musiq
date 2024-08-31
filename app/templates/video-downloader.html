@@ -1,0 +1,12 @@
+{% extends "components/base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/video-downloader.css') }}">
+<script src="{{url_for('static', filename='js/video-downloader.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+
+{% include 'components/video-downloader/video.html' %}
+
+{% endblock %}
