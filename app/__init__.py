@@ -8,8 +8,10 @@ def create_app():
 
     from app.routes import index_bp
     from app.routes import list_bp
+    from app.routes import video_bp
 
     app.register_blueprint(index_bp)
     app.register_blueprint(list_bp)
+    app.register_blueprint(video_bp)
 
     return app
