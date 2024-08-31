@@ -1,12 +1,12 @@
 from enum import Enum
 
 class FileExtension(Enum):
-    MP3 = '.mp3'
-    MP4 = '.mp4'
+    AVCHD = '.avchd'
     AVI = '.avi'
+    FLASH_VIDEO = '.flv'
     MKV = '.mkv'
     MOV = '.mov'
-    AVCHD = '.avchd'
+    MP3 = '.mp3'
+    MP4 = '.mp4'
     WEBM = '.webm'
     WMV = '.wmv'
-    FLASH_VIDEO = '.flv'
