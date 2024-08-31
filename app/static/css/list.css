@@ -11,7 +11,14 @@
     max-width: 600px;
 }
 
-input {
+.input-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-row input {
     height: 2rem;
     flex: 1;
     padding: .5rem;
@@ -19,11 +26,11 @@ input {
     font-size: 1rem;
 }
 
-.input-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 100%;
+.input-row input:read-only {
+    background-color: #CCC;
+    color: #666;
+    cursor: progress;
+    border-color: #AAA;
 }
 
 .input-row button {
@@ -34,6 +41,18 @@ input {
     padding: .75rem 1rem;
     cursor: pointer;
     font-size: 16px;
+    transition: all .3s ease-out;
+}
+
+.input-row button:hover {
+    background-color: #0056b3;
+    transition: all .3s ease-out;
+}
+
+.input-row button:disabled {
+    background-color: #CCC;
+    color: #666;
+    cursor: progress;
 }
 
 .item-list {
@@ -46,11 +65,41 @@ input {
 }
 
 .item-list li {
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 0rem;
     cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.item-list li button {
+    background-color: hsl(0 72% 51%);
+    border-radius: 5px;
+    color: hsl(0 0% 98%);
+    border: none;
+    padding: 1rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    align-self: end;
+    transition: all .3s ease-out;
+}
+
+.item-list li button:hover {
+    background-color: hsl(0 72% 60%);
+    color: hsl(0 0% 98%);
+    transition: all .3s ease-out;
+}
+
+.item-list li button:disabled {
+    background-color: #CCC;
+    color: #666;
+    cursor: not-allowed;
+    transition: all .3s ease-out;
 }
 
 .item-list li span {
+    flex: 1;
     margin-left: 1rem;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -61,6 +110,7 @@ input {
 
 .item-list li:hover {
     background: rgb(203 213 225);
+    transition: all .3s ease-out;
 }
 
 .download-btn {
@@ -72,4 +122,32 @@ input {
     cursor: pointer;
     font-size: 16px;
     align-self: end;
+    transition: all .3s ease-out;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    transition: all .3s ease-out;
+}
+
+.download-btn:disabled {
+    background-color: #CCC;
+    color: #666;
+    cursor: progress;
+    transition: all .3s ease-out;
+}
+
+@keyframes fadeOutRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.fade-out-right {
+    animation: fadeOutRight 0.5s forwards;
 }
