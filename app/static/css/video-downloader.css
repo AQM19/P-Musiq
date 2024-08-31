@@ -1,0 +1,65 @@
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-row input {
+    height: 2rem;
+    flex: 1;
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-row input:read-only {
+    background-color: #CCC;
+    color: #666;
+    cursor: wait;
+    border-color: #AAA;
+}
+
+.input-row button {
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: .75rem 1rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-row button:hover {
+    background-color: #0056b3;
+}
+
+.input-row button:disabled {
+    background-color: #CCC;
+    color: #666;
+    cursor: wait;
+}
+
+.message {
+    color: rgb(248 113 113);
+}
