@@ -2,7 +2,6 @@ from flask import Blueprint, render_template, request
 from app.enums import Paths, Endpoints, TemplateNames, Messages
 from app.services import download_video_mp4_from_youtube
 
-
 video_bp = Blueprint(Paths.VIDEO_DOWNLOADER.value, __name__)
 
 @video_bp.route(Endpoints.VIDEO.value, methods=['GET'])
